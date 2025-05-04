@@ -1,9 +1,5 @@
-# [borgBak-docker](https://hub.docker.com/r/keyzox/borg-backup)
-💾 A borg backup docker image with cron automation
-
-
-## Supported tags and respective Dockerfile links
-- [latest](https://github.com/KeyZox71/borgBak-docker/commit/c4603fc858d38c9b36782428884c731e8a82011a)
+# borgBak-docker
+A borg backup docker image with cron automation
 
 ## Compose example
 
@@ -36,5 +32,9 @@ secrets:
     file: ./borg-passphrase.txt
 ```
 
+## Contributing
+Feel free to contribute to this project but there is a few rule you need to follow in [CONTRIBUTING.md](https://github.com/KeyZox71/borgBak-docker/blob/main/CONTRIBUTING.md)
+On this repo [KeyZox71/borgBak-docker](https://github.com/KeyZox71/borgBak-docker)
+
 ## License
-This project is licensed under the MIT license - see the [LICENSE]()
+This project is licensed under the MIT license - see the [LICENSE](https://github.com/KeyZox71/borgBak-docker/blob/main/LICENSE)
