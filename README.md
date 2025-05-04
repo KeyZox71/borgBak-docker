@@ -1,4 +1,5 @@
-!(icon)[https://www.borgbackup.org/favicon.ico]
+![icon](https://www.borgbackup.org/favicon.ico)
+
 
 # borgBak-docker
 A borg backup docker image with cron automation
