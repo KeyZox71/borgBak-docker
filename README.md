@@ -2,10 +2,15 @@
 💾 A borg backup docker image with cron automation
 
 
+## Supported tags and respective Dockerfile links
+- [latest](https://github.com/KeyZox71/borgBak-docker/commit/c4603fc858d38c9b36782428884c731e8a82011a)
+
+## Compose example
+
 ```yml
 services:
   backup:
-    image: keyzox/borg-backup
+    image: keyzox/borg-backup:latest
     environment:
       - CRON_INTERVAL=0 2 * * *
       - BORG_PASSPHRASE_FILE=/run/secrets/borg-passphrase
@@ -30,3 +35,6 @@ secrets:
   borg-passphrase:
     file: ./borg-passphrase.txt
 ```
+
+## License
+This project is licensed under the MIT license - see the [LICENSE]()
