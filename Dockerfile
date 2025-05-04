@@ -1,5 +1,4 @@
-FROM			scratch AS builder
-ADD				docker/alpine/alpine-minirootfs-3.21.2-x86_64.tar.gz /
+FROM			alpine:3.21 AS builder
 
 RUN				apk add go
 
@@ -14,8 +13,7 @@ RUN				cd /build \
 				&& go build git.keyzox.me/42_adjoly/inception/cmd/borg-backup/entrypoint \
 				&& go build git.keyzox.me/42_adjoly/inception/cmd/borg-backup/getpassphrase
 
-FROM			scratch
-ADD				docker/alpine/alpine-minirootfs-3.21.2-x86_64.tar.gz /
+FROM			alpine:3.21
 
 LABEL			version="0.1"
 LABEL			maintainer="KeyZox"
@@ -30,7 +28,7 @@ RUN				apk add --no-cache borgbackup tzdata \
 
 COPY			--from=builder /build/entrypoint /docker-entrypoint
 COPY			--from=builder /build/getpassphrase /bin/getpassphrase
-COPY			docker/bonus/borg-backup/default-bak.sh /docker-backup.d/default-bak.sh
+COPY			default-bak.sh /docker-backup.d/default-bak.sh
 
 ENTRYPOINT		[ "/docker-entrypoint" ]
 WORKDIR			/
