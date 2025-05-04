@@ -33,7 +33,7 @@ secrets:
 ```
 
 ## Contributing
-Feel free to contribute to this project but there is a few rule you need to follow in [CONTRIBUTING.md](https://github.com/KeyZox71/borgBak-docker/blob/main/CONTRIBUTING.md)
+Feel free to contribute to this project but there is a few rule you need to follow in [CONTRIBUTING.md](https://github.com/KeyZox71/borgBak-docker/blob/main/CONTRIBUTING.md) \
 On this repo [KeyZox71/borgBak-docker](https://github.com/KeyZox71/borgBak-docker)
 
 ## License
