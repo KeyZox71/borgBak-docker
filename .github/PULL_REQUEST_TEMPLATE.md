@@ -12,4 +12,4 @@
 - [ ] environment change (if any change notify it above and justify it otherwise it will not be merge and closed)
 - [ ] No crash ?
 - [ ] Step added in entrypoint ?
-- [ ] Fits [CONTRIBUTING.md](https://github.com/keyzox71/borkBak-docker/blob/main/CONTRIBUTING.md).
+- [ ] Fits [CONTRIBUTING.md](https://github.com/keyzox71/borgBak-docker/blob/main/CONTRIBUTING.md).
